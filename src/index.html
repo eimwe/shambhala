@@ -18,7 +18,7 @@
           <dt class="logo__heading">Altai Nomads</dt>
           <dd class="logo__subheading">Sophisticated Wanderers</dd>
         </dl>
-        <nav class="navbar">
+        <nav aria-label="Desktop navigation" class="navbar">
           <ul class="navbar__container">
             <li>
               <a class="navbar__link" href="#tour">Ride</a>
@@ -40,7 +40,7 @@
             </li>
           </ul>
         </nav>
-        <button class="btn btn--menu" type="button">
+        <button class="btn btn--menu" type="button" aria-label="Pop-up menu button" aria-haspopup="true">
           <span class="visually-hidden">Menu</span>
         </button>
       </div>
@@ -129,9 +129,9 @@
         </div>
       </div>
     </section>
-    <section id="tour" class="section schedule">
+    <section aria-labelledby="tour" class="section schedule">
       <div class="section__content section__content--desktop">
-        <h2 class="section__heading">Tour Program</h2>
+        <h2 id="tour" class="section__heading">Tour Program</h2>
       </div>
       <div class="gallery schedule__gallery">
         <button class="btn btn--previous" type="button">
@@ -305,10 +305,10 @@
         </ul>
       </div>
     </section>
-    <section id="about" class="section features">
+    <section aria-labelledby="about" class="section features">
       <div class="container">
         <div class="section__content">
-          <h2 class="section__heading">Let's get acquainted!</h2>
+          <h2 id="about" class="section__heading">Let's get acquainted!</h2>
           <p class="section__description">
             We launched Altai Nomads 15 years ago to wander around Altai in a group of like-minded people. Our goals are easily expressible by the following signs:
           </p>
@@ -338,9 +338,9 @@
         </div>
       </div>
     </section>
-    <section id="team" class="section team">
+    <section aria-labelledby="team" class="section team">
       <div class="section__content">
-        <h2>
+        <h2 id="team">
           <span class="section__heading section__heading--desktop">
             Meet the team!
           </span>
@@ -437,9 +437,9 @@
         </ul>
       </div>
     </section>
-    <section id="stills" class="section photoreport">
+    <section aria-labelledby="stills" class="section photoreport">
       <div class="section__content">
-        <h2 class="section__heading">Ride in photos</h2>
+        <h2 id="stills" class="section__heading">Ride in photos</h2>
         <p class="section__description">
           <q class="section__quote">We all need to become nomads for a couple of days at least.</q>
         </p>
@@ -476,9 +476,9 @@
         </div>
       </div>
     </section>
-    <section id="faqs" class="section faq">
+    <section aria-labelledby="faqs" class="section faq">
       <div class="section__content">
-        <h2 class="section__heading">Frequently asked questions</h2>
+        <h2 id="faqs" class="section__heading">Frequently asked questions</h2>
       </div>
       <div class="faq__list">
         <details class="faq__item">
@@ -522,10 +522,10 @@
         </details>
       </div>
     </section>
-    <section id="signup" class="section decision">
+    <section aria-labelledby="signup" class="section decision">
       <div class="container">
         <div class="section__content">
-          <h2 class="section__heading">Sign up for the ride</h2>
+          <h2 id="signup" class="section__heading">Sign up for the ride</h2>
           <p class="section__description">
             Enter your phone number so we can call you back and plan your adventure to Belukha Mountain together.
           </p>
@@ -553,25 +553,25 @@
       <span class="visually-hidden">Close</span>
     </button>
     <div class="modal__container">
-      <nav class="navbar">
-        <ul class="navbar__container navbar__container--modal">
-          <li>
-            <a class="navbar__link" href="#tour">Ride</a>
+      <nav aria-label="Mobile navigation" class="navbar">
+        <ul class="navbar__container navbar__container--modal" role="menu">
+          <li role="none">
+            <a class="navbar__link" href="#tour" role="menuitem">Ride</a>
           </li>
-          <li>
-            <a class="navbar__link" href="#about">About us</a>
+          <li role="none">
+            <a class="navbar__link" href="#about" role="menuitem">About us</a>
           </li>
-          <li>
-            <a class="navbar__link" href="#team">Team</a>
+          <li role="none">
+            <a class="navbar__link" href="#team" role="menuitem">Team</a>
           </li>
-          <li>
-            <a class="navbar__link" href="#stills">Gallery</a>
+          <li role="none">
+            <a class="navbar__link" href="#stills" role="menuitem">Gallery</a>
           </li>
-          <li>
-            <a class="navbar__link" href="#faqs">FAQ</a>
+          <li role="none">
+            <a class="navbar__link" href="#faqs" role="menuitem">FAQ</a>
           </li>
-          <li class="btn btn--action">
-            <a class="navbar__link navbar__link--btn" href="#signup">Let's ride!</a>
+          <li class="btn btn--action" role="none">
+            <a class="navbar__link navbar__link--btn" href="#signup" role="menuitem">Let's ride!</a>
           </li>
         </ul>
       </nav>
