@@ -21,3 +21,6 @@ Marinarty is an UX/UI Designer from France. You can catch up with their projects
 ### Development Server
 
 `npm run dev`
+
+## Attributions
+1. [Nicolas Gallagher](https://nicolasgallagher.com/) for the _normalize.css_ file that you can [get from this source](https://necolas.github.io/normalize.css/);
