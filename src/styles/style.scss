@@ -1,11 +1,1 @@
-$clr-text: red;
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-figcaption {
-  font-size: 22px;
-  color: $clr-text;
-}
+@use './base' as *;
