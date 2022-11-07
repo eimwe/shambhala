@@ -1,4 +1,7 @@
 body {
   font-family: 'Raleway', sans-serif;
+  font-size: var(--fs-content);
   font-weight: 400;
+  line-height: var(--lead-content);
+  letter-spacing: var(--track-content);
 }
