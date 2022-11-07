@@ -1,3 +1,14 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   font-size: var(--fs-content);
@@ -6,4 +17,33 @@ body {
   letter-spacing: var(--track-content);
   color: var(--clr-content);
   background-color: var(--bg-body);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+button,
+input {
+  padding: 0;
+  border: 0;
+  font: inherit;
+}
+
+dl,
+dd,
+figure,
+blockquote {
+  margin: 0;
 }
