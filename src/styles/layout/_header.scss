@@ -1,0 +1,11 @@
+.page-header {
+  position: absolute;
+  top: 0;
+  min-width: 100%;
+  padding-block-start: 0.875em;
+
+  &__container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

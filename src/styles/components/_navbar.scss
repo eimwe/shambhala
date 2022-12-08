@@ -1,0 +1,9 @@
+@use '../abstracts/mixins';
+
+.navbar {
+  display: none;
+  
+  &__container {
+    @include mixins.reset_list;
+  }
+}

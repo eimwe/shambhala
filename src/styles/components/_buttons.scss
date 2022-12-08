@@ -1,0 +1,11 @@
+.btn {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  
+  &--menu {
+    display: block;
+    min-width: 34px;
+    min-height: 34px;
+    background-image: url('../assets/icon/hamburger-menu.svg');
+  }
+}
