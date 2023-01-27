@@ -1,0 +1,42 @@
+.banner {
+  background-image: url('../../assets/background/bg-banner.png');
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-size: cover;
+  filter: saturate(80%);
+
+  &__content {
+    display: grid;
+    min-height: 812px;
+    text-align: center;
+  }
+
+  &__heading {
+    align-self: end;
+    padding-inline: 3em;
+    margin: 0;
+    margin-block-end: 6.2em;
+    font-size: var(--fs-h1);
+    font-weight: 600;
+  }
+
+  &__subheading {
+    align-self: center;
+    margin: 0;
+    margin-block-end: 7.2em;
+    color: var(--clr-intro);
+  }
+
+  &__lowercase {
+    display: block;
+    font-size: var(--fs-banner-subtitle);
+    font-weight: 700;
+    text-transform: lowercase;
+  }
+
+  &__uppercase {
+    font-size: var(--fs-banner-title);
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+}
