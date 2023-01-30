@@ -1,0 +1,15 @@
+.gallery {
+  
+  &__control {
+    width: 34px;
+    height: 58px;
+
+    &--previous {
+      transform: scale(-1);
+    }
+  }
+
+  &__pointer {
+    vertical-align: middle;
+  }
+}
