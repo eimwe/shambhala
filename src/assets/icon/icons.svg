@@ -7,4 +7,11 @@
     <path d="M27.9285 24.2856C28.5992 24.2856 29.1428 24.8293 29.1428 25.4999C29.1428 26.1705 28.5992 26.7141 27.9285 26.7141H7.28568C6.61503 26.7141 6.07139 26.1705 6.07139 25.4999C6.07139 24.8293 6.61503 24.2856 7.28568 24.2856H27.9285Z" fill="white"/>
   </symbol>
 
+  <symbol id="button-arrow" viewBox="0 0 17 29">
+    <path d="M15.9998 14.3608L1 1.0001" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15.9998 14.3608L1 1.0001" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15.9998 14.6393L1 28" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15.9998 14.6393L1 28" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
 </svg>
