@@ -1,12 +1,8 @@
 .btn {
   background-color: transparent;
-  background-repeat: no-repeat;
   
   &--menu {
-    display: block;
-    min-width: 34px;
-    min-height: 34px;
-    padding-inline: 1.22em;
-    background-image: url('../assets/icon/hamburger-menu.svg');
+    height: 34px;
+    margin-inline-end: .3em;
   }
 }
