@@ -1,3 +1,5 @@
+@use '../abstracts/mixins';
+
 .gallery {
   
   &__control {
@@ -11,5 +13,26 @@
 
   &__pointer {
     vertical-align: middle;
+  }
+
+  &__pages {
+    @include mixins.reset_list;
+
+    display: flex;
+    justify-content: center;
+    gap: 1.875em;
+  }
+
+  &__page {
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: var(--br-circle);
+    background-color: var(--bg-pager);
+
+    &--active {
+      background-color: var(--clr-content);
+      transform: scale(1.6);
+      pointer-events: none;
+    }
   }
 }
