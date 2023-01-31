@@ -1,0 +1,35 @@
+/**
+ * Override default Swiper style rules
+ */
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 17px;
+  height: 29px;
+}
+
+.swiper-button-prev {
+  transform: scale(-1);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0;
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet + .swiper-pagination-bullet {
+  margin-inline-start: 1.875em;
+}
+
+.swiper-pagination-bullet {
+  min-width: 10px;
+  min-height: 10px;
+  background-color: var(--bg-pager);
+  opacity: 1;
+  transition: transform var(--delay);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--clr-content);
+  transform: scale(1.6);
+}
