@@ -1,0 +1,52 @@
+.schedule {
+  padding-block-start: 2.5em;
+
+  &__gallery {
+    padding-block-end: 3.4em;
+    margin-block-end: 3.28em;
+  }
+
+  &__item {
+    display: grid;
+    min-height: 610px;
+  }
+
+  &__content {
+    padding-inline: .875em;
+  }
+
+  &__intro {
+    display: flex;
+    justify-content: space-between;
+    margin-block-end: 1.8em;
+    font-size: var(--fs-lg);
+    font-weight: 600;
+  }
+
+  &__heading {
+    margin: 0;
+    margin-block-end: 1em;
+    font-size: var(--fs-md);
+    font-weight: 600;
+    letter-spacing: var(--track-intro);
+  }
+
+  &__description {
+    letter-spacing: var(--track-intro);
+    color: var(--clr-intro);
+  }
+
+  &__paragraph {
+    margin: 0;
+  }
+
+  &__paragraph + &__paragraph {
+    margin-block-start: 1.125em;
+  }
+
+  &__image {
+    align-self: end;
+    height: 270px;
+    object-fit: cover;
+  }
+}

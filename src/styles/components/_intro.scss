@@ -4,6 +4,10 @@
   &__content {
     text-align: center;
     margin-block-end: 3.25em;
+
+    &--desktop {
+      display: none;
+    }
   }
   
   &__heading {
