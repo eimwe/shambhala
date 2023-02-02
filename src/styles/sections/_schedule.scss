@@ -1,6 +1,10 @@
 .schedule {
   padding-block-start: 2.5em;
 
+  &__title {
+    display: none;
+  }
+
   &__gallery {
     padding-block-end: 3.4em;
     margin-block-end: 3.28em;
