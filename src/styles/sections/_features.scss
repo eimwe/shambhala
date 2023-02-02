@@ -1,0 +1,65 @@
+.features {
+  padding-block-end: 3.2em;
+  background-color: var(--bg-section);
+
+  &__content {
+    margin-block-end: 3.8em;
+  }
+
+  &__heading {
+    margin-block-end: 1.5em;
+  }
+
+  &__list {
+    text-align: center;
+  }
+
+  &__item + &__item {
+    margin-block-start: 5.7em;
+  }
+
+  &__image {
+    margin-inline: auto;
+
+    &--environment {
+      width: 58px;
+      height: 54px;
+      margin-block-end: 1.1em;
+    }
+
+    &--equality {
+      margin-block-end: .25em;
+    }
+
+    &--solidarity {
+      margin-block-end: .14em;
+    }
+  }
+
+  &__subheading {
+    margin: 0;
+    margin-block-end: 0.65em;
+    font-size: var(--fs-h3);
+    font-weight: 700;
+  }
+
+  &__description {
+    padding-inline: 1.2em;
+    margin: 0;
+    color: var(--clr-intro);
+  }
+
+  &__item:nth-child(2) {
+
+    > .features__description {
+      padding-inline: 1.53em;
+    }
+  }
+
+  &__item:not(:first-child) {
+
+    > .features__description {
+      letter-spacing: var(--track-intro);
+    }
+  }
+}
