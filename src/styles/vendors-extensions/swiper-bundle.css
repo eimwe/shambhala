@@ -38,3 +38,16 @@
 .schedule__gallery .swiper-button-prev {
   display: none;
 }
+
+.team__gallery .swiper-button-next,
+.team__gallery .swiper-button-prev {
+  display: none;
+}
+
+.team__gallery .swiper-slide-active .team__photo {
+  clip-path: inset(0);
+}
+
+.team__gallery .swiper-slide-active .team__content {
+  opacity: 1;
+}
