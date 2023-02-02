@@ -1,0 +1,60 @@
+.team {
+  padding-block-start: 3.7em;
+  padding-block-end: 2em;
+
+  &__desktop-title {
+    display: none;
+  }
+
+  &__mobile-title {
+    line-height: var(--lead-intro);
+  }
+
+  &__uppercase-title {
+    text-transform: uppercase;
+  }
+
+  &__mates {
+    min-height: 650px;
+  }
+
+  &__mate {
+    width: 292px;
+  }
+
+  &__photo {
+    width: 290px;
+    height: 424px;
+    margin-block-end: 1.375em;
+    object-fit: cover;
+    clip-path: inset(38px 14px);
+    transition: clip-path var(--delay);
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: .75em;
+    text-align: center;
+    opacity: 0;
+    transition: opacity var(--delay);
+  }
+
+  &__name {
+    font-size: var(--fs-xl);
+    font-weight: 700;
+  }
+
+  &__role {
+    display: block;
+    font-size: var(--fs-lg);
+    font-weight: 600;
+    text-transform: lowercase;
+  }
+
+  &__quote {
+    padding-inline: .5em;
+    letter-spacing: var(--track-intro);
+    color: var(--clr-intro);
+  }
+}
