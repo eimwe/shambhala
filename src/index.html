@@ -325,29 +325,23 @@
     <section aria-labelledby="team" class="section team">
       <div class="section__content">
         <h2 id="team">
-          <span class="section__heading section__heading--desktop">
+          <span class="section__heading team__desktop-title">
             Meet the team!
           </span>
-          <span class="section__heading section__heading--mobile">
+          <span class="section__heading team__mobile-title">
             <span class="section__uppercase">The</span> team
           </span>
         </h2>
       </div>
-      <div class="gallery team__gallery">
-        <button class="btn gallery__control gallery__control--previous" type="button">
-          <span class="visually-hidden">Previous</span>
-          <svg class="gallery__pointer" width="17" height="29">
-            <use href="./assets/icon/icons.svg#button-arrow"></use>
-          </svg>
-        </button>
-        <button class="btn gallery__control gallery__control--next" type="button">
-          <span class="visually-hidden">Next</span>
-          <svg class="gallery__pointer" width="17" height="29">
-            <use href="./assets/icon/icons.svg#button-arrow"></use>
-          </svg>
-        </button>
-        <div class="gallery__slides team__mates">
-          <figure class="team__mate team__mate--active">
+      <div class="swiper team__gallery">
+        <svg class="swiper-button-prev" width="17" height="29">
+          <use href="./assets/icon/icons.svg#button-arrow"></use>
+        </svg>
+        <svg class="swiper-button-next" width="17" height="29">
+          <use href="./assets/icon/icons.svg#button-arrow"></use>
+        </svg>
+        <div class="swiper-wrapper team__mates">
+          <figure class="swiper-slide team__mate">
             <img class="team__photo" src="./assets/content/galleries/team/team-member-1.jpg" alt="Stephen" width="424" height="538">
             <figure class="team__content">
               <blockquote class="team__quote">
@@ -359,7 +353,7 @@
               </figcaption>
             </figure>
           </figure>
-          <figure class="team__mate">
+          <figure class="swiper-slide team__mate">
             <img class="team__photo" src="./assets/content/galleries/team/team-member-2.jpg" alt="Temir" width="424" height="538">
             <figure class="team__content">
               <blockquote class="team__quote">
@@ -371,7 +365,7 @@
               </figcaption>
             </figure>
           </figure>
-          <figure class="team__mate">
+          <figure class="swiper-slide team__mate">
             <img class="team__photo" src="./assets/content/galleries/team/team-member-3.jpg" alt="Marinette" width="424" height="538">
             <figure class="team__content">
               <blockquote class="team__quote">
@@ -383,7 +377,7 @@
               </figcaption>
             </figure>
           </figure>
-          <figure class="team__mate">
+          <figure class="swiper-slide team__mate">
             <img class="team__photo" src="./assets/content/galleries/team/team-member-4.jpg" alt="Michelle" width="424" height="538">
             <figure class="team__content">
               <blockquote class="team__quote">
@@ -395,7 +389,7 @@
               </figcaption>
             </figure>
           </figure>
-          <figure class="team__mate">
+          <figure class="swiper-slide team__mate">
             <img class="team__photo" src="./assets/content/galleries/team/team-member-5.jpg" alt="Cookie" width="424" height="538">
             <figure class="team__content">
               <blockquote class="team__quote">
@@ -408,23 +402,7 @@
             </figure>
           </figure>
         </div>
-        <ul class="gallery__pages">
-          <li class="gallery__page gallery__page--active">
-            <span class="visually-hidden">1</span>
-          </li>
-          <li class="gallery__page">
-            <span class="visually-hidden">2</span>
-          </li>
-          <li class="gallery__page">
-            <span class="visually-hidden">3</span>
-          </li>
-          <li class="gallery__page">
-            <span class="visually-hidden">4</span>
-          </li>
-          <li class="gallery__page">
-            <span class="visually-hidden">5</span>
-          </li>
-        </ul>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
     <section aria-labelledby="stills" class="section photoreport">
