@@ -1,0 +1,60 @@
+@use '../abstracts/mixins';
+
+.faq {
+  @include mixins.reset_accordion;
+
+  margin-block-end: 5.75em;
+
+  &__item {
+    border-bottom: 1px solid currentColor;
+
+    &[open] {
+      & > summary::after {
+        content: '';
+        display: block;
+        min-width: 30px;
+        min-height: 1px;
+        background-color: white;
+      }
+
+      & > summary > svg {
+        display: none;
+      }
+    }
+
+    &:first-of-type {
+      border-top: 1px solid currentColor;
+    }
+  }
+
+  &__question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline-start: .9375em;
+    padding-inline-end: 1.5em;
+  }
+
+  &__widget {
+    flex-shrink: 0;
+  }
+
+  &__heading {
+    padding-inline-end: 4.1em;
+    margin-block: 1.5em;
+    font-size: var(--fs-lg);
+    font-weight: 700;
+  }
+
+  &__answer {
+    padding-inline-start: .9375em;
+    padding-inline-end: 1.5em;
+    padding-block-end: 2.25em;
+    margin-block: 0;
+    letter-spacing: var(--track-intro);
+
+    &--u-list {
+      padding-inline-start: 2em;
+    }
+  }
+}
