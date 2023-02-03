@@ -5,6 +5,18 @@
   list-style-type: none;
 }
 
+// Hides <details> disclosure widget
+@mixin reset_accordion {
+  details > summary {
+    list-style: none;
+  }
+  
+  details > summary::marker, /* Chrome, Edge, Firefox */ 
+  details > summary::-webkit-details-marker /* Safari */ {
+    display: none;
+  }
+}
+
 // Hides content excluding screen readers
 @mixin sr_only {
   position: absolute;
