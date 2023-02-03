@@ -23,4 +23,16 @@
       color: var(--clr-intro);
     }
   }
+
+  &__quote {
+    display: block;
+    padding-inline: 3.2em;
+    quotes: none;
+    color: var(--clr-intro);
+
+    &::after,
+    &::before {
+      content: '';
+    }
+  }
 }
