@@ -31,3 +31,18 @@ const TeamGallery = new Swiper('.team__gallery', {
   mousewheel: true,
   keyboard: true,
 });
+
+const StillsGallery = new Swiper('.photoreport__gallery', {
+  cssMode: true,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
+  mousewheel: true,
+  keyboard: true,
+});
