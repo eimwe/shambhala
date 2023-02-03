@@ -1,4 +1,9 @@
 import Swiper from './swiper-bundle.esm.browser.js';
+import Accordion from './accordion.js';
+
+document.querySelectorAll('details').forEach((el) => {
+  new Accordion(el);
+});
 
 const ScheduleGallery = new Swiper('.schedule__gallery', {
   cssMode: true,
