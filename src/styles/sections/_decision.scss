@@ -1,0 +1,16 @@
+.decision {
+  min-height: 644px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                    url('../../assets/background/bg-form.png');
+  background-repeat: no-repeat;
+  background-position-x: 25%;
+  background-size: cover;
+
+  &__content {
+    margin-block-end: 2.4em;
+  }
+
+  &__heading {
+    padding-inline: 1.2em;
+  }
+}

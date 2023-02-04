@@ -5,4 +5,11 @@
     height: 34px;
     margin-inline-end: .3em;
   }
+
+  &--submit {
+    padding-block: .7em;
+    font-size: var(--fs-xl);
+    font-weight: 700;
+    background-color: var(--bg-btn-submit);
+  }
 }
