@@ -1,9 +1,15 @@
 import Swiper from './swiper-bundle.esm.browser.js';
 import Accordion from './accordion.js';
+import FormValidator from './form-validator.js';
 
 document.querySelectorAll('details').forEach((el) => {
   new Accordion(el);
 });
+
+const FORM = document.getElementById('callback-form');
+const FIELDS = ['phone-number'];
+const inputValidation = new FormValidator(FORM, FIELDS, '+1');
+inputValidation.initialize();
 
 const ScheduleGallery = new Swiper('.schedule__gallery', {
   cssMode: true,
