@@ -1,0 +1,32 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+
+  &__control {
+    width: 100%;
+    outline: none;
+    transition: font-weight var(--delay),
+                box-shadow var(--delay),
+                background-color var(--delay);
+
+    &--phone {
+      padding-block: .95em;
+      padding-inline: .8em;
+      border: 1px solid currentColor;
+      font-size: var(--fs-lg);
+      font-weight: 300;
+      color: var(--clr-content);
+      background-color: transparent;
+
+      &:focus {
+        font-weight: 600;
+        box-shadow: inset 0 0 0 1px currentColor;
+      }
+    }
+
+    &::placeholder {
+      color: currentColor;
+    }
+  }
+}
