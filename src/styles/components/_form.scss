@@ -28,5 +28,13 @@
     &::placeholder {
       color: currentColor;
     }
+
+    &--invalid {
+      border-color: var(--clr-error);
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
   }
 }
