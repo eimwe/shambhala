@@ -1,6 +1,7 @@
 import Swiper from './swiper-bundle.esm.browser.js';
 import Accordion from './accordion.js';
 import FormValidator from './form-validator.js';
+import PhoneMask from './phone-mask.js';
 
 document.querySelectorAll('details').forEach((el) => {
   new Accordion(el);
@@ -10,6 +11,8 @@ const FORM = document.getElementById('callback-form');
 const FIELDS = ['phone-number'];
 const inputValidation = new FormValidator(FORM, FIELDS, '+1');
 inputValidation.initialize();
+
+PhoneMask('.form__control--phone');
 
 const ScheduleGallery = new Swiper('.schedule__gallery', {
   cssMode: true,
