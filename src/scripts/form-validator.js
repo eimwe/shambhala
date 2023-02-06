@@ -27,7 +27,6 @@ export default class FormValidator {
   initialize() {
     this.validateOnEntry();
     this.validateOnSubmit();
-    this.clearField();
   }
 
   /**
@@ -47,7 +46,7 @@ export default class FormValidator {
         if (INPUT.classList.contains('form__control--invalid')) {
           return false;
         } else {
-          INPUT.value = '';
+          INPUT.value = this.countryCode;
         }
       })
     })
@@ -66,46 +65,22 @@ export default class FormValidator {
     this.fields.forEach(field => {
       const INPUT = document.querySelector(`#${field}`);
       INPUT.addEventListener('input', event => {
-        INPUT.value = this.formatPhoneNumber(event.target.value);
+        INPUT.value = this.addCountryCode(event.target.value);
         this.validateFields(INPUT);
       })
     })
   }
 
   /**
-   * @method formatPhoneNumber
-   * @description formats phone number on entry
+   * @method addCountryCode
+   * @description adds country code to empty input
    * @param {String} input - user's entry
-   * @returns {String} formatted phone number as '{countryCode}(###)-###-##-##'
+   * @returns {String} country code specified in FormValidator instance
    */
-  formatPhoneNumber(input) {
-    input = input.replace(/\D/g,'');
-    let size = input.length;
-
-    if (size > 0) input = '(' + input;
-    if (size > 3) input = input.slice(0,4) + ')-' + input.slice(4,13);
-    if (size > 6) input = input.slice(0,9) + '-' + input.slice(9,11) + '-' + input.slice(11,13);    
-    if (size > 9) input = this.countryCode + input;
+  addCountryCode(input) {
+    if (input.length < 2) input = this.countryCode;
 
     return input;
-  }
-
-  /**
-   * @method clearField
-   * @description erases user's entries on focus and backspace keydown events
-   * @param {undefined}
-   * @returns {undefined}
-   */
-  clearField() {
-    this.fields.forEach(field => {
-      const INPUT = document.querySelector(`#${field}`);
-      INPUT.addEventListener('focus', () => {
-        INPUT.value = '';
-      })
-      INPUT.addEventListener('keydown', (event) => {
-        if (event.keyCode === 8) INPUT.value = '';
-      })
-    })
   }
 
   /**
@@ -116,8 +91,10 @@ export default class FormValidator {
    * @param {HTMLElement} field - input node
    * @returns {undefined}
    */
-  validateFields(field) {
-    if (field.value.trim() === '') {
+  validateFields(field) {    
+    if (field.value.trim() === this.countryCode) {
+      this.setStatus(field, 'error');
+    } else if (field.value.length < field.maxLength) {
       this.setStatus(field, 'error');
     } else {
       this.setStatus(field, 'success');
