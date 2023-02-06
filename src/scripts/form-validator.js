@@ -1,3 +1,5 @@
+import { confirmModal } from './modals.js';
+
 /**
  * @namespace FormValidator
  * Class representing a form validator.
@@ -47,6 +49,7 @@ export default class FormValidator {
           return false;
         } else {
           INPUT.value = this.countryCode;
+          confirmModal.showModal();
         }
       })
     })
