@@ -2,6 +2,7 @@ import Swiper from './swiper-bundle.esm.browser.js';
 import Accordion from './accordion.js';
 import FormValidator from './form-validator.js';
 import PhoneMask from './phone-mask.js';
+import setCurrentyear from './year-setter.js';
 
 document.querySelectorAll('details').forEach((el) => {
   new Accordion(el);
@@ -13,6 +14,8 @@ const inputValidation = new FormValidator(FORM, FIELDS, '+1');
 inputValidation.initialize();
 
 PhoneMask('.form__control--phone');
+
+setCurrentyear('.copyright__year');
 
 const ScheduleGallery = new Swiper('.schedule__gallery', {
   cssMode: true,
