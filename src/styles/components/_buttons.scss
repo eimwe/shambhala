@@ -12,4 +12,20 @@
     font-weight: 700;
     background-color: var(--bg-btn-submit);
   }
+
+  &--dismiss {
+    display: block;
+    margin-inline-start: auto;
+  }
+
+  &--confirm {
+    display: block;
+    padding-inline: 2em;
+    padding-block: .625em;
+    margin-inline: auto;
+    border-radius: var(--br-action);
+    font-weight: 600;
+    color: var(--clr-action);
+    background-color: var(--bg-btn-action);
+  }
 }

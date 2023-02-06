@@ -1,0 +1,32 @@
+.modal {
+  border: none;
+  color: var(--clr-content);
+  background-color: var(--bg-section);
+
+  &__btn-close {
+    transform: rotate(45deg);
+  }
+
+  &__container {
+    padding-block-start: 1em;
+    padding-block-end: 1em;
+  }
+
+  &__content {
+    padding-inline: 1.75em;
+    margin-block-end: 1.75em;
+  }
+
+  &__heading {
+    padding-inline: 0;
+  }
+
+  &__description {
+    padding-inline: 0;
+    color: var(--clr-intro);
+  }
+
+  &__description + &__description {
+    margin-block-start: 1em;
+  }
+}
