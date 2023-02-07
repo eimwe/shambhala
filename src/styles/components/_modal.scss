@@ -8,8 +8,11 @@
   }
 
   &__container {
-    padding-block-start: 1em;
-    padding-block-end: 1em;
+    padding-block: 1em;
+
+    &--menu {
+      padding: 1.5em;
+    }
   }
 
   &__content {

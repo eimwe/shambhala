@@ -1,9 +1,20 @@
 @use '../abstracts/mixins';
 
 .navbar {
-  display: none;
+
+  &--desktop {
+    display: none;
+  }
   
   &__container {
     @include mixins.reset_list;
+
+    &--modal {
+      text-align: center;
+    }
+  }
+
+  &__item + &__item {
+    margin-block-start: 1.875em;
   }
 }
