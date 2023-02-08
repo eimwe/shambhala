@@ -1,4 +1,5 @@
 @use './abstracts/variables';
+@use './abstracts/breakpoints/mq-settings';
 @use './vendors' as *;
 @use './vendors-extensions' as *;
 @use './base' as *;

@@ -1,0 +1,15 @@
+$breakpoints: (
+  medium:   600px,
+  large:    900px,
+  x-large:  1200px,
+  xx-large: 1600px,
+);
+
+$media-type: 'only screen';
+
+@use './mq'  with (
+  $breakpoints: $breakpoints,
+  $media-type: $media-type,
+  // Uncomment for debugging breakpoints
+  // $show-breakpoints: (medium, large, x-large, xx-large),
+);
