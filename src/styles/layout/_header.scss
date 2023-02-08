@@ -1,3 +1,5 @@
+@use '../abstracts/breakpoints/mq' as breakpoints;
+
 .page-header {
   position: absolute;
   top: 0;
@@ -8,5 +10,14 @@
   &__container {
     display: flex;
     justify-content: flex-end;
+  }
+
+  @include breakpoints.mq($from: medium) {
+    padding-block-start: 3em;
+
+    &__container {
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 }

@@ -1,4 +1,5 @@
 @use '../abstracts/mixins';
+@use '../abstracts/breakpoints/mq' as breakpoints;
 
 .navbar {
 
@@ -16,5 +17,21 @@
 
   &__item + &__item {
     margin-block-start: 1.875em;
+  }
+
+  @include breakpoints.mq($from: medium) {
+
+    &--desktop {
+      display: block;
+    }
+
+    &__container {
+      
+      &--desktop {
+        display: flex;
+        align-items: center;
+        gap: 1.25em;
+      }
+    }
   }
 }

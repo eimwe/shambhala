@@ -1,3 +1,23 @@
+@use '../abstracts/breakpoints/mq' as breakpoints;
+
 .logo {
   display: none;
+
+  @include breakpoints.mq($from: medium) {
+    display: block;
+
+    &__heading {
+      font-size: var(--fs-xl);
+      font-weight: 600;
+      letter-spacing: var(--track-logo-title);
+      line-height: var(--lead-logo-title);
+      text-transform: uppercase;
+    }
+
+    &__subheading {
+      font-size: var(--fs-sm);
+      letter-spacing: var(--track-logo-subtitle);
+      text-transform: lowercase;
+    }
+  }
 }

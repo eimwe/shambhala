@@ -1,3 +1,5 @@
+@use '../abstracts/breakpoints/mq' as breakpoints;
+
 .btn {
   background-color: transparent;
   
@@ -27,5 +29,12 @@
     font-weight: 600;
     color: var(--clr-action);
     background-color: var(--bg-btn-action);
+  }
+
+  @include breakpoints.mq($from: medium) {
+
+    &--menu {
+      display: none;
+    }
   }
 }
