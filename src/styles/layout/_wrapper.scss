@@ -1,11 +1,15 @@
+@use '../abstracts/breakpoints/mq' as breakpoints;
+
 .container {
   max-width: 1244px;
   padding-inline: 1.25em;
   margin-inline: auto;
-}
 
-@media only screen and (min-width: 1200px) {
-  .container {
+  @include breakpoints.mq($from: medium) {
+    padding-inline: 2em;
+  }
+
+  @include breakpoints.mq($from: x-large) {
     padding-inline: 0;
   }
 }
