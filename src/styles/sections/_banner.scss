@@ -1,3 +1,5 @@
+@use '../abstracts/breakpoints/mq' as breakpoints;
+
 .banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
                     url('../../assets/background/bg-banner.png');
@@ -38,5 +40,24 @@
     font-size: var(--fs-banner-title);
     font-weight: 800;
     text-transform: uppercase;
+  }
+
+  @include breakpoints.mq($from: medium) {
+
+    &__content {
+      min-height: 832px;
+    }
+
+    &__heading {
+      order: 1;
+      align-self: start;
+      padding-inline: 0;
+      margin-block-end: 0;
+    }
+  
+    &__subheading {
+      align-self: end;
+      margin-block-end: 0;
+    }
   }
 }
