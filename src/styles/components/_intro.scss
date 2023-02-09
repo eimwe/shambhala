@@ -1,3 +1,5 @@
+@use '../abstracts/breakpoints/mq' as breakpoints;
+
 .section {
   padding-block-start: 3.5em;
 
@@ -33,6 +35,18 @@
     &::after,
     &::before {
       content: '';
+    }
+  }
+
+  @include breakpoints.mq($from: medium) {
+    padding-block-start: 5.5em;
+
+    &__heading {
+      padding-inline: 0;
+    }
+
+    &__description {
+      padding-inline: 4.2em;
     }
   }
 }

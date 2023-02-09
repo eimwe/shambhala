@@ -1,3 +1,5 @@
+@use '../abstracts/breakpoints/mq' as breakpoints;
+
 .details {
   margin-block-end: .875em;
 
@@ -63,6 +65,26 @@
       vertical-align: middle;
       font-size: x-large;
       line-height: 0;
+    }
+  }
+
+  @include breakpoints.mq($from: medium) {
+    margin-block-end: 2.75em;
+    
+    &__container {
+      position: relative;
+    }
+
+    &__list {
+      margin-block-end: 0;
+    }
+
+    &__image {
+      position: absolute;
+      bottom: 0;
+      right: 1.25em;
+      z-index: -1;
+      padding-inline-start: 0;
     }
   }
 }
