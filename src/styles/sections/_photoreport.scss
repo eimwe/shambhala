@@ -1,3 +1,5 @@
+@use '../abstracts/breakpoints/mq' as breakpoints;
+
 .photoreport {
   padding-block-start: 3em;
   background-color: var(--bg-section);
@@ -35,5 +37,9 @@
   &__snapshot {
     height: 622px;
     object-fit: cover;
+  }
+
+  @include breakpoints.mq($from: medium) {
+    padding-block-start: 5.5em;
   }
 }
