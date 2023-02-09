@@ -1,3 +1,5 @@
+@use '../abstracts/breakpoints/mq' as breakpoints;
+
 .form {
   display: flex;
   flex-direction: column;
@@ -36,5 +38,10 @@
         box-shadow: none;
       }
     }
+  }
+
+  @include breakpoints.mq($from: medium) {
+    flex-direction: row;
+    gap: unset;
   }
 }

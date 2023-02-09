@@ -1,3 +1,5 @@
+@use '../abstracts/breakpoints/mq' as breakpoints;
+
 .decision {
   min-height: 644px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -12,5 +14,16 @@
 
   &__heading {
     padding-inline: 1.2em;
+  }
+
+  @include breakpoints.mq($from: medium) {
+    
+    &__heading {
+      padding-inline: 0;
+    }
+
+    &__content {
+      margin-block-end: 5.25em;
+    }
   }
 }

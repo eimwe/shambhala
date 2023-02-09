@@ -36,5 +36,10 @@
     &--menu {
       display: none;
     }
+
+    &--submit {
+      padding-block: 1em;
+      padding-inline: 3.125em;
+    }
   }
 }
