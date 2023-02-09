@@ -1,3 +1,5 @@
+@use '../abstracts/breakpoints/mq' as breakpoints;
+
 .features {
   padding-block-end: 3.2em;
   background-color: var(--bg-section);
@@ -60,6 +62,24 @@
 
     > .features__description {
       letter-spacing: var(--track-intro);
+    }
+  }
+
+  @include breakpoints.mq($from: medium) {
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5em;
+    }
+
+    &__item + &__item {
+      margin-block-start: 0;
+    }
+
+    &__item {
+      flex-basis: calc(50% - 40px);
     }
   }
 }
