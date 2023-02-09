@@ -1,3 +1,5 @@
+@use '../abstracts/breakpoints/mq' as breakpoints;
+
 .team {
   padding-block-start: 3.7em;
   padding-block-end: 2em;
@@ -56,5 +58,18 @@
     padding-inline: .5em;
     letter-spacing: var(--track-intro);
     color: var(--clr-intro);
+  }
+
+  @include breakpoints.mq($from: medium) {
+    padding-block-start: 5.5em;
+    padding-block-end: 2.75em;
+
+    &__mobile-title {
+      display: none;
+    }
+
+    &__desktop-title {
+      display: block;
+    }
   }
 }
