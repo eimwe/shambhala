@@ -49,4 +49,11 @@
       padding-inline: 4.2em;
     }
   }
+
+  @include breakpoints.mq($from: large) {
+   
+    &__description {
+      padding-inline: 12em;
+    }
+  }
 }

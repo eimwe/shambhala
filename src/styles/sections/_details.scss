@@ -87,4 +87,36 @@
       padding-inline-start: 0;
     }
   }
+
+  @include breakpoints.mq($from: large) {
+
+    &__list {
+      
+      &--mobile {
+        display: none;
+      }
+      
+      &--desktop {
+        display: flex;
+        gap: 5em;
+        margin-block-start: 6.25em;
+      }
+    }
+
+    &__image {
+      right: 0;
+      bottom: -5em;
+      min-width: 400px;
+      min-height: 400px;
+    }
+
+    &__caption {
+      bottom: 6em;
+      right: 6.75em;
+
+      &::before {
+        font-size: xxx-large;
+      }
+    }
+  }
 }
