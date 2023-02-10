@@ -72,4 +72,21 @@
       display: block;
     }
   }
+
+  @include breakpoints.mq($from: large) {
+
+    &__mates {
+      min-height: 780px;
+    }
+  
+    &__mate {
+      width: 424px;
+    }
+  
+    &__photo {
+      width: 424px;
+      height: 538px;
+      clip-path: inset(40px 20px);
+    }
+  }
 }

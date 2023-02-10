@@ -72,4 +72,10 @@
   .schedule__gallery .swiper-button-prev {
     display: block;
   }
+
+  .team__gallery .swiper-button-next,
+  .team__gallery .swiper-button-prev {
+    display: block;
+    top: calc(50% - 110px);
+  }
 }
