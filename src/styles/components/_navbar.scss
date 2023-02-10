@@ -34,4 +34,26 @@
       }
     }
   }
+
+  @include breakpoints.mq($from: large) {
+
+    &__container {
+      
+      &--desktop {
+        gap: 1.875em;
+
+        & > li:last-child {
+          margin-inline-start: .25em;
+        }
+      }
+    }
+
+    &__link {
+      transition: opacity var(--delay);
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
 }

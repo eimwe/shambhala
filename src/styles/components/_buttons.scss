@@ -2,6 +2,7 @@
 
 .btn {
   background-color: transparent;
+  cursor: pointer;
   
   &--menu {
     height: 34px;
@@ -40,6 +41,17 @@
     &--submit {
       padding-block: 1em;
       padding-inline: 3.125em;
+    }
+  }
+
+  @include breakpoints.mq($from: large) {
+
+    &--confirm {
+      transition: background-color var(--delay);
+
+      &:hover {
+        background-color: var(--clr-content);
+      }
     }
   }
 }
