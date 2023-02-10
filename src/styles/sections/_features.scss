@@ -82,4 +82,12 @@
       flex-basis: calc(50% - 40px);
     }
   }
+
+  @include breakpoints.mq($from: large) {
+    padding-block-end: 5.5em;
+
+    &__item {
+      flex-basis: 25%;
+    }
+  }
 }
