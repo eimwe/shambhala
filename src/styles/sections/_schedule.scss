@@ -82,4 +82,26 @@
       min-height: 340px;
     }
   }
+
+  @include breakpoints.mq($from: large) {
+
+    &__item {
+      grid-auto-flow: column;
+      min-height: 488px;
+    }
+
+    &__content {
+      order: 1;
+    }
+
+    &__description {
+      padding-inline-end: 0;
+    }
+
+    &__image {
+      align-self: stretch;
+      min-height: 488px;
+      min-width: 440px;
+    }
+  }
 }

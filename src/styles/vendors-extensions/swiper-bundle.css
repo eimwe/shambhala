@@ -65,3 +65,11 @@
 .photoreport__gallery .swiper-pagination-fraction {
   bottom: 40px;
 }
+
+@media only screen and (min-width: 900px) {
+
+  .schedule__gallery .swiper-button-next,
+  .schedule__gallery .swiper-button-prev {
+    display: block;
+  }
+}
