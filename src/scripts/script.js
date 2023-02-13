@@ -49,7 +49,8 @@ const TeamGallery = new Swiper('.team__gallery', {
   keyboard: true,
   breakpoints: {
     900: {
-        slidesPerView: 3,
+      slidesPerView: 3,
+      cssMode: false,
     }
   },
 });
