@@ -36,7 +36,6 @@ const ScheduleGallery = new Swiper('.schedule__gallery', {
 const TeamGallery = new Swiper('.team__gallery', {
   slidesPerView: "auto",
   centeredSlides: true,
-  cssMode: true,
   loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
@@ -51,7 +50,6 @@ const TeamGallery = new Swiper('.team__gallery', {
   breakpoints: {
     900: {
       slidesPerView: 3,
-      cssMode: false,
       mousewheel: {
         forceToAxis: true,
       },
