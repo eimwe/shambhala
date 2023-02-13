@@ -51,6 +51,9 @@ const TeamGallery = new Swiper('.team__gallery', {
     900: {
       slidesPerView: 3,
       cssMode: false,
+      mousewheel: {
+        forceToAxis: true,
+      },
     }
   },
 });
