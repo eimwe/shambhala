@@ -5,22 +5,22 @@ const menuModalOpenBtn = document.querySelector('.btn--menu');
 const menuModalCloseBtn = document.querySelector('.modal--menu .btn--dismiss');
 const menuModalNavItems = document.querySelectorAll('.modal--menu .navbar__item');
 
-const openModal = () => menuModal.showModal();
-const closeModal = () => menuModal.close();
+const openMenuModal = () => menuModal.showModal();
+const closeMenuModal = () => menuModal.close();
 
 const initMenuModalOnMobile = () => {
 
   if (small.matches) {
-    menuModalOpenBtn.addEventListener('click', openModal);
-    menuModalCloseBtn.addEventListener('click', closeModal);
+    menuModalOpenBtn.addEventListener('click', openMenuModal);
+    menuModalCloseBtn.addEventListener('click', closeMenuModal);
     menuModalNavItems.forEach(item => {
-      item.addEventListener('click', closeModal);
+      item.addEventListener('click', closeMenuModal);
     });
   } else {
-    menuModalOpenBtn.removeEventListener('click', openModal);
-    menuModalCloseBtn.removeEventListener('click', closeModal);
+    menuModalOpenBtn.removeEventListener('click', openMenuModal);
+    menuModalCloseBtn.removeEventListener('click', closeMenuModal);
     menuModalNavItems.forEach(item => {
-      item.removeEventListener('click', closeModal);
+      item.removeEventListener('click', closeMenuModal);
     });
   }
 }
