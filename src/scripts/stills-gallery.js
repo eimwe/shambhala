@@ -1,9 +1,10 @@
 import Swiper from './swiper-bundle.esm.browser.js';
+import { medium } from './breakpoints.js';
 
 let StillsGallery, init = false;
 
 const initStillsOnMobile = () => {
-  if (window.innerWidth <= 768) {
+  if (medium.matches) {
     if (!init) {
       init = true;
       StillsGallery = new Swiper('.photoreport__gallery', {

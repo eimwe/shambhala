@@ -1,3 +1,5 @@
+import { small } from './breakpoints.js';
+
 const menuModal = document.querySelector('.modal--menu');
 const menuModalOpenBtn = document.querySelector('.btn--menu');
 const menuModalCloseBtn = document.querySelector('.modal--menu .btn--dismiss');
@@ -8,7 +10,7 @@ const closeModal = () => menuModal.close();
 
 const initMenuModalOnMobile = () => {
 
-  if (window.innerWidth < 601) {
+  if (small.matches) {
     menuModalOpenBtn.addEventListener('click', openModal);
     menuModalCloseBtn.addEventListener('click', closeModal);
     menuModalNavItems.forEach(item => {
