@@ -78,4 +78,13 @@
     display: block;
     top: calc(50% - 110px);
   }
+
+  .photoreport__gallery .swiper-button-next,
+  .photoreport__gallery .swiper-button-prev {
+    display: none;
+  }
+
+  .photoreport__gallery .swiper-pagination {
+    display: none;
+  }
 }
