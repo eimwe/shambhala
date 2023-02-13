@@ -3,6 +3,7 @@ import Accordion from './accordion.js';
 import FormValidator from './form-validator.js';
 import PhoneMask from './phone-mask.js';
 import setCurrentyear from './year-setter.js';
+import initStillsOnMobile from './stills-gallery.js';
 
 document.querySelectorAll('details').forEach((el) => {
   new Accordion(el);
@@ -58,17 +59,5 @@ const TeamGallery = new Swiper('.team__gallery', {
   },
 });
 
-const StillsGallery = new Swiper('.photoreport__gallery', {
-  cssMode: true,
-  loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'fraction',
-  },
-  mousewheel: true,
-  keyboard: true,
-});
+initStillsOnMobile();
+window.addEventListener('resize', initStillsOnMobile);
