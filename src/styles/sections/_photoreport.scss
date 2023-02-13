@@ -42,4 +42,61 @@
   @include breakpoints.mq($from: medium) {
     padding-block-start: 5.5em;
   }
+
+  @include breakpoints.mq($from: large) {
+    padding-inline: 2em;
+    padding-block-end: 2.75em;
+
+    &__gallery {
+
+      &::after {
+        content: none;
+      }
+    }
+
+    &__snapshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 1.375em;
+    }
+
+    &__snapshot {
+      height: 400px;
+      transition: filter var(--delay);
+      cursor: pointer;
+
+      &:nth-of-type(1n+4) {
+        display: none;
+      }
+
+      &:last-child {
+        display: block;
+        filter: brightness(0.4);
+      }
+
+      &:hover {
+        filter: brightness(0.4);
+      }
+    }
+
+    &__modal {
+      position: absolute;
+      right: calc(16% - 18px);
+      bottom: calc(24% - 18px);
+      z-index: 1;
+      display: block;
+      font-weight: 600;
+      font-size: var(--fs-xxl);
+      color: var(--clr-intro);
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 6px;
+      text-decoration-color: currentColor;
+      transition: text-decoration-color var(--delay);
+
+      &:hover {
+        text-decoration-color: transparent;
+      }
+    }
+  }
 }
