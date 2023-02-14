@@ -574,39 +574,140 @@
       </nav>
     </div>
   </dialog>
-  <dialog class="modal modal--gallery">
-    <button class="btn btn--dismiss btn--overlay" type="button">
+  <dialog class="modal modal--thumbs">
+    <button class="btn btn--dismiss" type="button">
       <span class="visually-hidden">Close</span>
+      <svg class="modal__btn-close" width="30" height="30">
+        <use href="./assets/icon/icons.svg#button-crosshairs"></use>
+      </svg>
     </button>
-    <div class="gallery gallery__modal">
-      <figure class="gallery__full-szied">
-        <img src="./assets/content/galleries/photoreport/stills-1.jpg" alt="Deer">
-        <figcaption class="gallery__footer">
-          <p class="gallery__caption">
-            In our tour, animals are equally respected as humans
-          </p>
-          <div class="gallery__counter">
-            <span class="gallery__current-slide">1</span>
-            <span class="gallery__total-slides">14</span>
-          </div>
-        </figcaption>
-      </figure>
-      <figure class="gallery__thumbs">
-        <img class="gallery__thumb gallery__thumb--active" src="./assets/content/galleries/photoreport/stills-1.jpg" alt="Deer" width="200" height="200" data-caption="In our tour, animals are equally respected as humans">
-        <img class="gallery__thumb" src="./assets/content/galleries/photoreport/stills-2.png" alt="Horse tour" width="200" height="200" data-caption="There's hardly a place where the horse wouldn't pass, therefore the rider">
-        <img class="gallery__thumb" src="./assets/content/galleries/photoreport/stills-3.png" alt="Backpack tour" width="200" height="200" data-caption="Mountains possess a truly enigmatic power">
-        <img class="gallery__thumb" src="./assets/content/galleries/photoreport/stills-4.png" alt="Berries" width="200" height="200" data-caption="You'll stumble upon the most beautiful flora">
-        <img class="gallery__thumb" src="./assets/content/galleries/photoreport/stills-5.png" alt="Squirrel" width="200" height="200" data-caption="The fauna gladly gives you a chance to take a picture">
-        <img class="gallery__thumb" src="./assets/content/galleries/photoreport/stills-6.png" alt="Picturesque lake" width="200" height="200" data-caption="We go down to the Tekel River passing the stunning Skynchak cliff">
-        <img class="gallery__thumb" src="./assets/content/galleries/photoreport/stills-7.jpg" alt="Holy mountains" width="200" height="200" data-caption="It's one of the most serious challenges in the entire trip for both horses and riders">
-        <img class="gallery__thumb" src="./assets/content/galleries/photoreport/stills-8.jpg" alt="Horseback riding" width="200" height="200" data-caption="Today we have to go over the highland and alpine meadows">
-        <img class="gallery__thumb" src="./assets/content/galleries/photoreport/stills-9.jpg" alt="Animal care" width="200" height="200" data-caption="Farewell to horses and group. It's time to go back home">
-        <img class="gallery__thumb" src="./assets/content/galleries/photoreport/stills-10.jpg" alt="Beautiful lake" width="200" height="200" data-caption="We stayed the night at the source of the Tukhman River">
-        <img class="gallery__thumb" src="./assets/content/galleries/photoreport/stills-11.jpg" alt="Mountain waterfall" width="200" height="200" data-caption="Amazingly beautiful lakes, numerous waterfalls, flowering alpine meadows, and snow-white peaks open up to the eye">
-        <img class="gallery__thumb" src="./assets/content/galleries/photoreport/stills-12.jpg" alt="Mountain Zen" width="200" height="200" data-caption="the 'Seven Lakes Valley'">
-        <img class="gallery__thumb" src="./assets/content/galleries/photoreport/stills-13.jpg" alt="Horses enjoying sun" width="200" height="200" data-caption="The horse trek to Belukha continues">
-        <img class="gallery__thumb" src="./assets/content/galleries/photoreport/stills-14.jpg" alt="Berry tea" width="200" height="200" data-caption="Reward yourself with a cup of hot berry tea">
-      </figure>
+    <div class="gallery">
+      <div class="swiper-container gallery__top">
+        <div class="swiper-wrapper">
+          <figure class="swiper-slide gallery__slide">
+            <img class="gallery__fullsize" src="./assets/content/galleries/photoreport/stills-1.jpg" alt="Deer" width="755" height="600">
+            <figcaption class="gallery__caption-container">
+              <p class="gallery__caption">In our tour, animals are equally respected as humans</p>
+              <span class="gallery__counter">1/14</span>
+            </figcaption>
+          </figure>
+          <figure class="swiper-slide gallery__slide">
+            <img class="gallery__fullsize" src="./assets/content/galleries/photoreport/stills-2.png" alt="Horse tour" width="755" height="600">
+            <figcaption class="gallery__caption-container">
+              <p class="gallery__caption">There's hardly a place where the horse wouldn't pass, therefore the rider</p>
+              <span class="gallery__counter">2/14</span>
+            </figcaption>
+          </figure>
+          <figure class="swiper-slide gallery__slide">
+            <img class="gallery__fullsize" src="./assets/content/galleries/photoreport/stills-3.png" alt="Backpack tour" width="755" height="600">
+            <figcaption class="gallery__caption-container">
+              <p class="gallery__caption">Mountains possess a truly enigmatic power</p>
+              <span class="gallery__counter">3/14</span>
+            </figcaption>
+          </figure>
+          <figure class="swiper-slide gallery__slide">
+            <img class="gallery__fullsize" src="./assets/content/galleries/photoreport/stills-4.png" alt="Berries" width="755" height="600">
+            <figcaption class="gallery__caption-container">
+              <p class="gallery__caption">You'll stumble upon the most beautiful flora</p>
+              <span class="gallery__counter">4/14</span>
+            </figcaption>
+          </figure>
+          <figure class="swiper-slide gallery__slide">
+            <img class="gallery__fullsize" src="./assets/content/galleries/photoreport/stills-5.png" alt="Squirrel" width="755" height="600">
+            <figcaption class="gallery__caption-container">
+              <p class="gallery__caption">The fauna gladly gives you a chance to take a picture</p>
+              <span class="gallery__counter">5/14</span>
+            </figcaption>
+          </figure>
+          <figure class="swiper-slide gallery__slide">
+            <img class="gallery__fullsize" src="./assets/content/galleries/photoreport/stills-6.png" alt="Picturesque lake" width="755" height="600">
+            <figcaption class="gallery__caption-container">
+              <p class="gallery__caption">We go down to the Tekel River passing the stunning Skynchak cliff</p>
+              <span class="gallery__counter">6/14</span>
+            </figcaption>
+          </figure>
+          <figure class="swiper-slide gallery__slide">
+            <img class="gallery__fullsize" src="./assets/content/galleries/photoreport/stills-7.jpg" alt="Holy mountains" width="755" height="600">
+            <figcaption class="gallery__caption-container">
+              <p class="gallery__caption">It's one of the most serious challenges in the entire trip for both horses and riders</p>
+              <span class="gallery__counter">7/14</span>
+            </figcaption>
+          </figure>
+          <figure class="swiper-slide gallery__slide">
+            <img class="gallery__fullsize" src="./assets/content/galleries/photoreport/stills-8.jpg" alt="Horseback riding" width="755" height="600">
+            <figcaption class="gallery__caption-container">
+              <p class="gallery__caption">Today we have to go over the highland and alpine meadows</p>
+              <span class="gallery__counter">8/14</span>
+            </figcaption>
+          </figure>
+          <figure class="swiper-slide gallery__slide">
+            <img class="gallery__fullsize" src="./assets/content/galleries/photoreport/stills-9.jpg" alt="Animal care" width="755" height="600">
+            <figcaption class="gallery__caption-container">
+              <p class="gallery__caption">Farewell to horses and group. It's time to go back home</p>
+              <span class="gallery__counter">9/14</span>
+            </figcaption>
+          </figure>
+          <figure class="swiper-slide gallery__slide">
+            <img class="gallery__fullsize" src="./assets/content/galleries/photoreport/stills-10.jpg" alt="Beautiful lake" width="755" height="600">
+            <figcaption class="gallery__caption-container">
+              <p class="gallery__caption">We stayed the night at the source of the Tukhman River</p>
+              <span class="gallery__counter">10/14</span>
+            </figcaption>
+          </figure>
+          <figure class="swiper-slide gallery__slide">
+            <img class="gallery__fullsize" src="./assets/content/galleries/photoreport/stills-11.jpg" alt="Mountain waterfall" width="755" height="600">
+            <figcaption class="gallery__caption-container">
+              <p class="gallery__caption">Amazingly beautiful lakes, numerous waterfalls, flowering alpine meadows, and snow-white peaks open up to the eye</p>
+              <span class="gallery__counter">11/14</span>
+            </figcaption>
+          </figure>
+          <figure class="swiper-slide gallery__slide">
+            <img class="gallery__fullsize" src="./assets/content/galleries/photoreport/stills-12.jpg" alt="Mountain Zen" width="755" height="600">
+            <figcaption class="gallery__caption-container">
+              <p class="gallery__caption">Behold the 'Seven Lakes Valley'</p>
+              <span class="gallery__counter">12/14</span>
+            </figcaption>
+          </figure>
+          <figure class="swiper-slide gallery__slide">
+            <img class="gallery__fullsize" src="./assets/content/galleries/photoreport/stills-13.jpg" alt="Horses enjoying sun" width="755" height="600">
+            <figcaption class="gallery__caption-container">
+              <p class="gallery__caption">The horse trek to Belukha continues</p>
+              <span class="gallery__counter">13/14</span>
+            </figcaption>
+          </figure>
+          <figure class="swiper-slide gallery__slide">
+            <img class="gallery__fullsize" src="./assets/content/galleries/photoreport/stills-14.jpg" alt="Berry tea" width="755" height="600">
+            <figcaption class="gallery__caption-container">
+              <p class="gallery__caption">Reward yourself with a cup of hot berry tea</p>
+              <span class="gallery__counter">14/14</span>
+            </figcaption>
+          </figure>
+        </div>
+        <svg class="swiper-button-prev" width="17" height="29">
+          <use href="./assets/icon/icons.svg#button-arrow"></use>
+        </svg>
+        <svg class="swiper-button-next" width="17" height="29">
+          <use href="./assets/icon/icons.svg#button-arrow"></use>
+        </svg>
+      </div>
+      <div class="swiper-container gallery__bottom">
+        <figure class="swiper-wrapper gallery__thumbs">
+          <img class="swiper-slide gallery__thumb" src="./assets/content/galleries/photoreport/stills-1.jpg" alt="Deer" width="166" height="166">
+          <img class="swiper-slide gallery__thumb" src="./assets/content/galleries/photoreport/stills-2.png" alt="Horse tour" width="166" height="166">
+          <img class="swiper-slide gallery__thumb" src="./assets/content/galleries/photoreport/stills-3.png" alt="Backpack tour" width="166" height="166">
+          <img class="swiper-slide gallery__thumb" src="./assets/content/galleries/photoreport/stills-4.png" alt="Berries" width="166" height="166">
+          <img class="swiper-slide gallery__thumb" src="./assets/content/galleries/photoreport/stills-5.png" alt="Squirrel" width="166" height="166">
+          <img class="swiper-slide gallery__thumb" src="./assets/content/galleries/photoreport/stills-6.png" alt="Picturesque lake" width="166" height="166">
+          <img class="swiper-slide gallery__thumb" src="./assets/content/galleries/photoreport/stills-7.jpg" alt="Holy mountains" width="166" height="166">
+          <img class="swiper-slide gallery__thumb" src="./assets/content/galleries/photoreport/stills-8.jpg" alt="Horseback riding" width="166" height="166">
+          <img class="swiper-slide gallery__thumb" src="./assets/content/galleries/photoreport/stills-9.jpg" alt="Animal care" width="166" height="166">
+          <img class="swiper-slide gallery__thumb" src="./assets/content/galleries/photoreport/stills-10.jpg" alt="Beautiful lake" width="166" height="166">
+          <img class="swiper-slide gallery__thumb" src="./assets/content/galleries/photoreport/stills-11.jpg" alt="Mountain waterfall" width="166" height="166">
+          <img class="swiper-slide gallery__thumb" src="./assets/content/galleries/photoreport/stills-12.jpg" alt="Mountain Zen" width="166" height="166">
+          <img class="swiper-slide gallery__thumb" src="./assets/content/galleries/photoreport/stills-13.jpg" alt="Horses enjoying sun" width="166" height="166">
+          <img class="swiper-slide gallery__thumb" src="./assets/content/galleries/photoreport/stills-14.jpg" alt="Berry tea" width="166" height="166">
+        </figure>
+      </div>
     </div>
   </dialog>
 </body>
