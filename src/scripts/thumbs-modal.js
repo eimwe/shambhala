@@ -4,7 +4,11 @@ const thumbsModal = document.querySelector('.modal--thumbs');
 const thumbsModalOpenBtn = document.querySelector('.photoreport__modal');
 const thumbsModalCloseBtn = document.querySelector('.modal--thumbs .btn--dismiss');
 
-const openThumbsModal = () => thumbsModal.showModal();
+const openThumbsModal = (event) => {
+  event.preventDefault();
+  thumbsModal.showModal();
+}
+
 const closeThumbsModal = () => thumbsModal.close();
 
 const initThumbsModalOnDesktop = () => {
