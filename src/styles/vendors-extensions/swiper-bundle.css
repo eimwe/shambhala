@@ -87,4 +87,12 @@
   .photoreport__gallery .swiper-pagination {
     display: none;
   }
+
+  .gallery__top .swiper-button-next {
+    right: 40px;
+  }
+
+  .gallery__top .swiper-button-prev {
+    left: 40px;
+  }
 }
