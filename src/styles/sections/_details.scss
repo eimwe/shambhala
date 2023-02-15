@@ -3,6 +3,14 @@
 .details {
   margin-block-end: .875em;
 
+  &__description {
+    color: var(--clr-intro);
+  }
+
+  &__items {
+    display: none;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: 120px 160px;
@@ -11,10 +19,6 @@
     text-align: center;
     margin-block-end: 1.32em;
     margin-inline-start: 1.25em;
-
-    &--desktop {
-      display: none;
-    }
   }
 
   &__heading {
@@ -35,6 +39,10 @@
   &__subheading {
     font-weight: 500;
     color: var(--clr-intro);
+  }
+
+  &__line-break {
+    display: none;
   }
 
   &__sub {
@@ -91,15 +99,29 @@
   @include breakpoints.mq($from: large) {
 
     &__list {
+      display: flex;
+      gap: 5em;
+      margin-inline-start: 0;
       
       &--mobile {
         display: none;
       }
-      
-      &--desktop {
-        display: flex;
-        gap: 5em;
-        margin-block-start: 6.25em;
+    }
+
+    &__items {
+      display: flex;
+      gap: 5em;
+      margin-block-start: 6.25em;
+      margin-inline-start: 1.25em;
+    }
+
+    &__heading {
+
+      &--currency {
+
+        &::before {
+          content: '$';
+        }
       }
     }
 
@@ -116,6 +138,75 @@
 
       &::before {
         font-size: xxx-large;
+      }
+    }
+  }
+
+  @include breakpoints.mq($from: x-large) {
+    min-height: 644px;
+
+    &__description {
+      padding-inline-end: 32em;
+      font-size: var(--fs-md);
+    }
+
+    &__items {
+      gap: 6.75em;
+      margin-block-start: 7em;
+      margin-inline-start: 6.75em;
+    }
+
+    &__list {
+      gap: 7em;
+
+      &--odd {
+        gap: 5.65em;
+      }
+    }
+
+    &__subheading {
+      font-size: var(--fs-lg);
+      line-height: var(--lead-subpoints);
+
+      &--days {
+        transform: translate(-6px, 4px);
+      }
+
+      &--miles {
+        transform: translate(-2px, 8px);
+      }
+
+      &--people {
+        transform: translate(-22px, 6px);
+      }
+
+      &--person {
+        transform: translate(-24px, 6px);
+      }
+    }
+
+    &__line-break {
+      display: block;
+    }
+
+    &__image {
+      right: 1.25em;
+      bottom: -12.25em;
+      min-width: 520px;
+      min-height: 500px;
+    }
+
+    &__caption {
+      bottom: 8.2em;
+      right: 11em;
+
+      &::before {
+        display: inline-block;
+        vertical-align: bottom;
+        width: 16px;
+        height: 16px;
+        border-radius: var(--br-circle);
+        padding-block-start: .1em;
       }
     }
   }
