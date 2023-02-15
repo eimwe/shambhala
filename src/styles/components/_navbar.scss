@@ -56,4 +56,12 @@
       }
     }
   }
+
+  @include breakpoints.mq($from: x-large) {
+
+    &__link {
+      font-family: 'Open Sans';
+      font-weight: 600;
+    }
+  }
 }
