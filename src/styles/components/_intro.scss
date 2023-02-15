@@ -20,10 +20,6 @@
     padding-inline: .22em;
     margin: 0;
     letter-spacing: var(--track-intro);
-
-    &--light {
-      color: var(--clr-intro);
-    }
   }
 
   &__quote {
@@ -54,6 +50,23 @@
    
     &__description {
       padding-inline: 12em;
+    }
+  }
+
+  @include breakpoints.mq($from: x-large) {
+    padding-block-start: 6em;
+
+    &__content {
+      padding-inline-start: 6.65em;
+      text-align: left;
+    }
+
+    &__heading {
+      margin-block-end: 1.75em;
+    }
+
+    &__description {
+      padding-inline-start: 0;
     }
   }
 }
