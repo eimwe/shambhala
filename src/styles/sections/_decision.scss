@@ -26,4 +26,9 @@
       margin-block-end: 5.25em;
     }
   }
+
+  @include breakpoints.mq($from: large) {
+    min-height: 782px;
+    padding-block-start: 11.375em;
+  }
 }

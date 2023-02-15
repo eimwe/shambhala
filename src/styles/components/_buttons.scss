@@ -53,5 +53,17 @@
         background-color: var(--clr-content);
       }
     }
+    
+    &--submit {
+      padding-block: .75em;
+      padding-inline: 2.5em;
+      font-size: var(--fs-lg);
+      color: var(--clr-action);
+      transition: color var(--delay);
+
+      &:hover {
+        color: initial;
+      }
+    }
   }
 }

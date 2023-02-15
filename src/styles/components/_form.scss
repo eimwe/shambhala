@@ -44,4 +44,17 @@
     flex-direction: row;
     gap: unset;
   }
+
+  @include breakpoints.mq($from: large) {
+    max-width: 582px;
+    margin-inline: auto;
+
+    &__control {
+
+      &--phone {
+        padding-block: .75em;
+        padding-inline: 1.25em;
+      }
+    }
+  }
 }
