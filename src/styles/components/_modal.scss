@@ -32,4 +32,8 @@
   &__description + &__description {
     margin-block-start: 1em;
   }
+
+  &__opened {
+    overflow: hidden;
+  }
 }
