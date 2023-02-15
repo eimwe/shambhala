@@ -4,6 +4,7 @@ import FormValidator from './form-validator.js';
 import PhoneMask from './phone-mask.js';
 import setCurrentyear from './year-setter.js';
 import initStillsOnMobile from './stills-gallery.js';
+import initThumbsOnDesktop from './thumbs-gallery.js';
 
 document.querySelectorAll('details').forEach((el) => {
   new Accordion(el);
@@ -59,3 +60,6 @@ const TeamGallery = new Swiper('.team__gallery', {
 
 initStillsOnMobile();
 window.addEventListener('resize', initStillsOnMobile);
+
+initThumbsOnDesktop();
+window.addEventListener('resize', initThumbsOnDesktop);
