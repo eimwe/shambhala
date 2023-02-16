@@ -89,4 +89,43 @@
       clip-path: inset(40px 20px);
     }
   }
+
+  @include breakpoints.mq($from: x-large) {
+    padding-block-end: .6em;
+
+    &__intro {
+      padding-inline-start: 17.25em;
+      margin-block-end: 5em;
+    }
+
+    &__heading {
+      margin-block-end: 0;
+    }
+
+    &__gallery {
+      padding-inline: 10em;
+    }
+
+    &__mate {
+      visibility: hidden;
+    }
+
+    &__photo {
+      width: 424px;
+      height: 538px;
+      margin-block-end: 1em;
+      clip-path: inset(50px);
+    }
+
+    &__content {
+      text-align: left;
+      padding-inline-start: 3.5em;
+      padding-inline-end: 2em;
+    }
+
+    &__quote {
+      padding-inline: 0;
+      font-size: var(--fs-md);
+    }
+  }
 }
