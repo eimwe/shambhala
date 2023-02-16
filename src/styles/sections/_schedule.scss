@@ -104,4 +104,43 @@
       min-width: 440px;
     }
   }
+
+  @include breakpoints.mq($from: x-large) {
+    margin-block-end: 0;
+
+    &__title {
+      padding-inline-start: 0;
+      margin-inline-start: 17.2em;
+      margin-block-end: 3em;
+    }
+
+    &__section-heading {
+      margin-block-end: 0;
+    }
+
+    &__gallery {
+      padding-inline: 12.8em;
+      padding-block-end: 3.8em;
+    }
+    
+    &__items {
+      border-radius: var(--br-content);
+    }
+
+    &__content {
+      padding-block-start: 6.375em;
+      padding-block-end: 2em;
+      padding-inline-start: 2.875em;
+      padding-inline-end: 3.25em;
+      background-color: var(--bg-section);
+    }
+
+    &__intro {
+      margin-block-end: 2.7em;
+    }
+
+    &__paragraph {
+      font-size: var(--fs-md);
+    }
+  }
 }
