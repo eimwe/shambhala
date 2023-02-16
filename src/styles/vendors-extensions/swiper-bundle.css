@@ -111,4 +111,32 @@
   .schedule__gallery .swiper-pagination-bullets .swiper-pagination-bullet + .swiper-pagination-bullet {
     margin-inline-start: 1.55em;
   }
+
+  .team__gallery .swiper-slide-active,
+  .team__gallery .swiper-slide-prev,
+  .team__gallery .swiper-slide-next {
+    visibility: visible;
+  }
+
+  .team__gallery .swiper-slide-prev {
+    transform: translateX(30px);
+  }
+
+  .team__gallery .swiper-slide-next {
+    transform: translateX(-30px);
+  }
+
+  .team__gallery .swiper-button-prev {
+    top: 35.5%;
+    left: 12.75em;
+  }
+  
+  .team__gallery .swiper-button-next {
+    top: 35.4%;
+    right: 12.75em;
+  }
+  
+  .team__gallery .swiper-pagination {
+    display: none;
+  }
 }
