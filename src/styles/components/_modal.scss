@@ -1,3 +1,5 @@
+@use '../abstracts/breakpoints/mq' as breakpoints;
+
 .modal {
   border: none;
   color: var(--clr-content);
@@ -35,5 +37,22 @@
 
   &__opened {
     overflow: hidden;
+  }
+
+  @include breakpoints.mq($from: x-large) {
+    border-radius: var(--br-content);
+
+    &--thumbs {
+      padding-inline-start: 0;
+      padding-block: 0;
+    }
+
+    &__container {
+
+      &--thumbs {
+        position: relative;
+        padding: 0;
+      }
+    }
   }
 }
