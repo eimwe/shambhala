@@ -95,6 +95,10 @@
   .gallery__top .swiper-button-prev {
     left: 40px;
   }
+
+  .gallery__bottom .swiper-slide-thumb-active {
+    filter: brightness(0.4);
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -138,5 +142,9 @@
   
   .team__gallery .swiper-pagination {
     display: none;
+  }
+
+  .gallery__top .swiper-button-next {
+    right: 460px;
   }
 }
