@@ -14,6 +14,11 @@ const initThumbsOnDesktop = () => {
         loopedSlides: 14, //looped slides should be the same
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
+        breakpoints: {
+          1200: {
+            loop: false,
+          }
+        },
       });
       FullsizeGallery = new Swiper('.gallery__top', {
         loop: true,
