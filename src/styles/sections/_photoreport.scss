@@ -12,6 +12,26 @@
     margin-block-end: .8em;
   }
 
+  &__line-break {
+    display: none;
+  }
+
+  &__quotemarks {
+    display: none;
+  }
+
+  &__quote {
+    display: block;
+    padding-inline: 3.2em;
+    quotes: none;
+    color: var(--clr-intro);
+
+    &::after,
+    &::before {
+      content: '';
+    }
+  }
+
   &__modal {
     display: none;
   }
@@ -63,12 +83,11 @@
     &__snapshot {
       height: 400px;
 
-      &:nth-of-type(1n+4) {
+      &:nth-of-type(1n+5) {
         display: none;
       }
 
-      &:last-child {
-        display: block;
+      &:nth-of-type(4) {
         filter: brightness(0.4);
       }
     }
@@ -86,11 +105,77 @@
       text-decoration-thickness: 2px;
       text-underline-offset: 6px;
       text-decoration-color: currentColor;
-      transition: text-decoration-color var(--delay);
+      transition: color var(--delay), text-decoration-color var(--delay);
 
       &:hover {
+        color: var(--clr-content);
         text-decoration-color: transparent;
       }
+    }
+  }
+
+  @include breakpoints.mq($from: x-large) {
+    padding-inline: 0;
+    padding-block-end: 4em;
+    background-color: unset;
+
+    &__content {
+      position: relative;
+      padding-inline-start: 15.3em;
+      margin-block-end: 5.12em;
+    }
+
+    &__heading {
+      margin-block-end: .65em;
+    }
+
+    &__line-break {
+      display: block;
+    }
+  
+    &__quotemarks {
+      position: absolute;
+      top: 2.25em;
+      left: 12.5em;
+      z-index: -1;
+      display: block;
+    }
+
+    &__quote {
+      padding-inline: 0;
+      font-size: var(--fs-xl);
+      letter-spacing: normal;
+      color: var(--clr-content);
+    }
+
+    &__snapshots {
+      gap: 1.25em;
+      max-width: 1244px;
+      margin-inline: auto;
+    }
+
+    &__snapshot {
+
+      &:nth-of-type(1n+5) {
+        display: block;
+      }
+
+      &:nth-of-type(1n+7) {
+        display: none;
+      }
+
+      &:nth-of-type(4) {
+        filter: none;
+      }
+
+      &:nth-of-type(6) {
+        filter: brightness(0.4);
+      }
+    }
+
+    &__modal {
+      right: calc(18% - 22px);
+      bottom: calc(20% + 10px);
     }
   }
 }
