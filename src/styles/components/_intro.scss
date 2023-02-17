@@ -22,18 +22,6 @@
     letter-spacing: var(--track-intro);
   }
 
-  &__quote {
-    display: block;
-    padding-inline: 3.2em;
-    quotes: none;
-    color: var(--clr-intro);
-
-    &::after,
-    &::before {
-      content: '';
-    }
-  }
-
   @include breakpoints.mq($from: medium) {
     padding-block-start: 5.5em;
 
@@ -66,7 +54,7 @@
     }
 
     &__description {
-      padding-inline-start: 0;
+      padding-inline: 0;
     }
   }
 }
