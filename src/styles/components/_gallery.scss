@@ -1,3 +1,5 @@
+@use '../abstracts/breakpoints/mq' as breakpoints;
+
 .gallery {
   overflow: hidden;
 
@@ -61,5 +63,51 @@
     width: 166px;
     height: 166px;
     object-fit: cover;
+    transition: filter var(--delay);
+  }
+
+  @include breakpoints.mq($from: x-large) {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2em;
+
+    &__top {
+      width: 755px;
+      height: 600px;
+      margin-block-start: 0;
+      margin-block-end: 0;
+      overflow: hidden;
+    }
+
+    &__bottom {
+      width: 380px;
+      height: 600px;
+      padding-inline-end: 1.5em;
+      overflow-y: auto;
+      transform: scale(0.94);
+      scrollbar-width: thin;
+      scrollbar-color: var(--bg-scrollbar) transparent;
+
+      &::-webkit-scrollbar {
+        width: .3125em;
+        background-color: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: var(--br-content);
+        background-color: var(--bg-scrollbar);
+      }
+
+      &::-webkit-scrollbar-button {
+        height: 36px;
+      }
+    }
+
+    &__thumbs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(166px, 1fr));
+      gap: 1em;
+      transform: none !important;
+    }
   }
 }
