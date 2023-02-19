@@ -1,3 +1,5 @@
+@use '../abstracts/breakpoints/mq' as breakpoints;
+
 .copyright {
   position: absolute;
   bottom: 0;
@@ -9,5 +11,12 @@
     margin: 0;
     font-weight: 300;
     line-height: var(--lead-copyright);
+  }
+
+  @include breakpoints.mq($from: x-large) {
+
+    &__content {
+      font-size: var(--fs-lg);
+    }
   }
 }
