@@ -54,5 +54,15 @@
         padding: 0;
       }
     }
+
+    &--confirm {
+      width: 40%;
+
+      .modal__content {
+        padding-inline: 2em;
+        margin-block-end: 2em;
+        text-align: center;
+      }
+    }
   }
 }
