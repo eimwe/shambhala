@@ -1,4 +1,4 @@
-import { large } from './breakpoints.js';
+import { large } from '../../../breakpoints.js';
 
 const escapeModal = () => document.body.classList.remove('modal__opened');
 
