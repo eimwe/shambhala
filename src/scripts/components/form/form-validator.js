@@ -1,4 +1,4 @@
-import { confirmModal } from './modals.js';
+import confirmModal from '../modals/confirm-modal.js';
 
 /**
  * @namespace FormValidator

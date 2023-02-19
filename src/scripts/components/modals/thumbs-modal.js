@@ -1,5 +1,5 @@
-import { large } from './breakpoints.js';
-import isModalOpened from './control-body-scroll.js';
+import { large } from '../../match-media/breakpoints.js';
+import isModalOpened from './helpers/control-body-scroll.js';
 
 const thumbsModal = document.querySelector('.modal--thumbs');
 const thumbsModalOpenBtn = document.querySelector('.photoreport__modal');
