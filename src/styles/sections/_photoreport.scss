@@ -121,7 +121,7 @@
 
     &__content {
       position: relative;
-      padding-inline-start: 15.3em;
+      padding-inline-start: 10em;
       margin-block-end: 5.12em;
     }
 
@@ -136,7 +136,7 @@
     &__quotemarks {
       position: absolute;
       top: 2.25em;
-      left: 12.5em;
+      left: 7em;
       z-index: -1;
       display: block;
     }
@@ -174,8 +174,23 @@
     }
 
     &__modal {
-      right: calc(18% - 22px);
+      right: calc(15% - 40px);
       bottom: calc(20% + 10px);
+    }
+  }
+
+  @include breakpoints.mq($from: xx-large) {
+
+    &__content {
+      padding-inline-start: 15.3em;
+    }
+
+    &__quotemarks {
+      left: 12.5em;
+    }
+
+    &__modal {
+      right: calc(18% - 22px);
     }
   }
 }
