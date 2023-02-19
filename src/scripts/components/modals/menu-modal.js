@@ -1,4 +1,4 @@
-import { small } from './breakpoints.js';
+import { small } from '../../breakpoints.js';
 
 const menuModal = document.querySelector('.modal--menu');
 const menuModalOpenBtn = document.querySelector('.btn--menu');

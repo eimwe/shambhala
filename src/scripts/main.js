@@ -1,4 +1,5 @@
 import * as galleries from './components/galleries/index.js';
+import * as modals from './components/modals/index.js';
 import Accordion from './accordion.js';
 import FormValidator from './form-validator.js';
 import PhoneMask from './phone-mask.js';
