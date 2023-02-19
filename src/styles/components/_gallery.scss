@@ -73,15 +73,23 @@
 
     &__top {
       width: 755px;
-      height: 600px;
+      height: 525px;
       margin-block-start: 0;
       margin-block-end: 0;
       overflow: hidden;
     }
 
+    &__slide {
+      min-height: 525px;
+    }
+
+    &__fullsize {
+      height: 525px;
+    }
+
     &__bottom {
       width: 380px;
-      height: 600px;
+      height: 525px;
       padding-inline-end: 1.5em;
       overflow-y: auto;
       transform: scale(0.94);
@@ -108,6 +116,24 @@
       grid-template-columns: repeat(auto-fit, minmax(166px, 1fr));
       gap: 1em;
       transform: none !important;
+    }
+  }
+
+  @include breakpoints.mq($from: xx-large) {
+    &__top {
+      height: 600px;
+    }
+
+    &__slide {
+      min-height: 600px;
+    }
+    
+    &__fullsize {
+      height: 600px;
+    }
+
+    &__bottom {
+      height: 600px;
     }
   }
 }
