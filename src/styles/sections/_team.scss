@@ -94,7 +94,7 @@
     padding-block-end: .6em;
 
     &__intro {
-      padding-inline-start: 17.25em;
+      padding-inline-start: 10em;
       margin-block-end: 5em;
     }
 
@@ -111,10 +111,7 @@
     }
 
     &__photo {
-      width: 424px;
-      height: 538px;
       margin-block-end: 1em;
-      clip-path: inset(50px);
     }
 
     &__content {
@@ -126,6 +123,17 @@
     &__quote {
       padding-inline: 0;
       font-size: var(--fs-md);
+    }
+  }
+
+  @include breakpoints.mq($from: xx-large) {
+
+    &__intro {
+      padding-inline-start: 17.25em;
+    }
+
+    &__photo {
+      clip-path: inset(50px);
     }
   }
 }
