@@ -1,5 +1,5 @@
 import Swiper from '../../vendor/swiper-bundle.esm.browser.js';
-import { medium } from '../../breakpoints.js';
+import { medium } from '../../match-media/breakpoints.js';
 
 let StillsGallery, init = false;
 
