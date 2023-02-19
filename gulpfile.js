@@ -63,12 +63,12 @@ function minifyScripts() {
 }
 
 function optimizeImages() {
-  return src('dist/assets/images/content/*.{jpeg,jpg,png}')
+  return src('dist/assets/**/*.{jpeg,jpg,png}')
     .pipe(imagemin([
       imagemin.mozjpeg({ quality: 80, progressive: true }),
       imagemin.optipng({ optimizationLevel: 2 }),
     ]))
-    .pipe(dest('dist/assets/images/content'));
+    .pipe(dest('dist/assets'));
 }
 
 exports.dev = series
