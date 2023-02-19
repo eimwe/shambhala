@@ -1,4 +1,4 @@
-import Swiper from './swiper-bundle.esm.browser.js';
+import Swiper from './vendor/swiper-bundle.esm.browser.js';
 import { large } from './breakpoints.js';
 
 let FullsizeGallery, ThumbsGallery, initThumbs = false;

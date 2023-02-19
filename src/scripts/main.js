@@ -1,4 +1,4 @@
-import Swiper from './swiper-bundle.esm.browser.js';
+import Swiper from './vendor/swiper-bundle.esm.browser.js';
 import Accordion from './accordion.js';
 import FormValidator from './form-validator.js';
 import PhoneMask from './phone-mask.js';
