@@ -66,6 +66,8 @@
   }
 
   @include breakpoints.mq($from: x-large) {
+    border-end-end-radius: var(--br-action);
+    border-end-start-radius: var(--br-action);
 
     &__content {
       text-align: left;
