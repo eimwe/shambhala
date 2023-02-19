@@ -104,12 +104,12 @@
 @media only screen and (min-width: 1200px) {
   .schedule__gallery .swiper-button-prev {
     top: 45%;
-    left: 10.75em;
+    left: 4em;
   }
   
   .schedule__gallery .swiper-button-next {
     top: 45%;
-    right: 10.45em;
+    right: 4em;
   }
 
   .schedule__gallery .swiper-pagination-bullets .swiper-pagination-bullet + .swiper-pagination-bullet {
@@ -146,5 +146,15 @@
 
   .gallery__top .swiper-button-next {
     right: 460px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .schedule__gallery .swiper-button-prev {
+    left: 10.75em;
+  }
+  
+  .schedule__gallery .swiper-button-next {
+    right: 10.75em;
   }
 }

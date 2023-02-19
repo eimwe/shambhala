@@ -110,7 +110,7 @@
 
     &__title {
       padding-inline-start: 0;
-      margin-inline-start: 17.2em;
+      margin-inline-start: 10em;
       margin-block-end: 3em;
     }
 
@@ -119,7 +119,7 @@
     }
 
     &__gallery {
-      padding-inline: 12.8em;
+      padding-inline: 6em;
       padding-block-end: 3.8em;
     }
     
@@ -141,6 +141,17 @@
 
     &__paragraph {
       font-size: var(--fs-md);
+    }
+  }
+
+  @include breakpoints.mq($from: xx-large) {
+
+    &__title {
+      margin-inline-start: 17.2em;
+    }
+
+    &__gallery {
+      padding-inline: 12.8em;
     }
   }
 }
