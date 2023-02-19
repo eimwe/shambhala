@@ -54,6 +54,7 @@ const TeamGallery = new Swiper('.team__gallery', {
       mousewheel: {
         forceToAxis: true,
       },
+      grabCursor: true,
     }
   },
 });
