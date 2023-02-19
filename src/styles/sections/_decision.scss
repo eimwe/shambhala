@@ -31,4 +31,24 @@
     min-height: 782px;
     padding-block-start: 11.375em;
   }
+
+  @include breakpoints.mq($from: x-large) {
+    border-start-end-radius: var(--br-action);
+    border-start-start-radius: var(--br-action);
+    background-position-y: 100%;
+
+    &__content {
+      padding-inline-start: 0;
+      text-align: center;
+    }
+
+    &__description {
+      padding-inline: 20em;
+      font-size: var(--fs-md);
+    }
+
+    &__heading {
+      margin-block-end: 2.112em;
+    }
+  }
 }
