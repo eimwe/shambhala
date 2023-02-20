@@ -11,14 +11,18 @@
 
   &--submit {
     padding-block: .7em;
+    border-radius: 0;
+    -webkit-border-radius: 0;
     font-size: var(--fs-xl);
     font-weight: 700;
+    color: var(--clr-action);
     background-color: var(--bg-btn-submit);
   }
 
   &--dismiss {
     display: block;
     margin-inline-start: auto;
+    outline: none;
   }
 
   &--confirm {
