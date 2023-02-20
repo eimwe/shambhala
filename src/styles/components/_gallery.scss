@@ -64,6 +64,7 @@
     height: 166px;
     object-fit: cover;
     transition: filter var(--delay);
+    cursor: pointer;
   }
 
   @include breakpoints.mq($from: x-large) {
